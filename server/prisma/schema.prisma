@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Table {
+  id          String  @id @default(uuid())
+  command     String  @unique
+  isActive    Boolean
+  status      String
+  name        String
+  coffe1      String
+  coffe2      String
+  coffe3      String
+  coffe4      String
+  coffe5      String
+  coffe6      String
+  coffe7      String
+  capuccino1  String
+  capuccino2  String
+  frapuccino1 String
+  frapuccino2 String
+
+  @@map("tables")
+}
