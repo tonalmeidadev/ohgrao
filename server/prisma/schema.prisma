@@ -9,21 +9,21 @@ datasource db {
 
 model Table {
   id          String  @id @default(uuid())
-  command     String  @unique
+  command     Int     @unique
   isActive    Boolean
   status      String
   name        String
-  coffe1      String
-  coffe2      String
-  coffe3      String
-  coffe4      String
-  coffe5      String
-  coffe6      String
-  coffe7      String
-  capuccino1  String
-  capuccino2  String
-  frapuccino1 String
-  frapuccino2 String
+  coffe1      Int
+  coffe2      Int
+  coffe3      Int
+  coffe4      Int
+  coffe5      Int
+  coffe6      Int
+  coffe7      Int
+  capuccino1  Int
+  capuccino2  Int
+  frapuccino1 Int
+  frapuccino2 Int
 
   @@map("tables")
 }

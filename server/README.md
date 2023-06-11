@@ -5,25 +5,25 @@ D = DELETE
 
 Rota "/restaurante"
 
-- (R) Busca todas as mesas
-- (C) Adiciona mesas
-- (D) Remove mesas
-- (U) Altera o status da mesa
+[x] (R) Busca todas as mesas
+[x] (C) Adiciona mesas
+[x] (D) Remove mesas
+[x] (U) Altera o status da mesa
 
 Rota "/"
 
-- (R) Busca por todas as mesas
-- (U) Altera o campo "nome" da mesa correspondente
+[x] (R) Busca por todas as mesas
+[x] (U) Altera o campo "nome" da mesa correspondente
 
 Rota "/pedidos"
 
-- (R) Busca pela tabela da comanda
-- (U) Altera a quantidade do produto correspondente
-- (U) Altera o status da mesa
+[x] (R) Busca pela tabela da comanda
+[x] (U) Altera a quantidade dos produtos
+[x] (U) Altera o status da mesa
 
 Rota "/cozinha"
 
-- (U) Altera a quantidade de todos os produtos para 0
+[x] (U) Altera a quantidade de todos os produtos para 0
 
 ESQUEMA DA TABELA:
 

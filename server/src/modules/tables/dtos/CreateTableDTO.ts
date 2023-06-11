@@ -1,17 +1,17 @@
 export interface CreateTableDTO {
-  command:string
+  command:number
   isActive: boolean
   status:string
   name: string
-  coffe1: string
-  coffe2: string
-  coffe3: string
-  coffe4: string
-  coffe5: string
-  coffe6: string
-  coffe7: string
-  capuccino1: string
-  capuccino2: string
-  frapuccino1: string
-  frapuccino2: string
+  coffe1: number
+  coffe2: number
+  coffe3: number
+  coffe4: number
+  coffe5: number
+  coffe6: number
+  coffe7: number
+  capuccino1: number
+  capuccino2: number
+  frapuccino1: number
+  frapuccino2: number
 }

@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { tablesRoutes } from "./table.route";
+import { tableRoutes } from "./table.route";
 
 const routes = Router();
 
-routes.use("/table", tablesRoutes);
+routes.use("/tables", tableRoutes);
 
 export { routes };
