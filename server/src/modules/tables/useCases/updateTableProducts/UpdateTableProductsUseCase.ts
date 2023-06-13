@@ -4,6 +4,7 @@ import { prisma } from "../../../../prisma/client";
 export class UpdateTableProductsUseCase {
   async execute(
     tableId: string,
+    status: string,
     coffe1: number,
     coffe2: number,
     coffe3: number,
@@ -24,6 +25,7 @@ export class UpdateTableProductsUseCase {
     await prisma.table.update({
       where: { id: tableId },
       data: {
+        status,
         coffe1,
         coffe2,
         coffe3,

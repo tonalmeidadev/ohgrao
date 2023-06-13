@@ -5,6 +5,7 @@ export class UpdateTableProductsController {
   async handle(req: Request, res: Response) {
     const { id } = req.params;
     const {
+      status,
       coffe1,
       coffe2,
       coffe3,
@@ -21,6 +22,7 @@ export class UpdateTableProductsController {
     const updateTableProductsUseCase = new UpdateTableProductsUseCase();
     await updateTableProductsUseCase.execute(
       id,
+      status,
       coffe1,
       coffe2,
       coffe3,
