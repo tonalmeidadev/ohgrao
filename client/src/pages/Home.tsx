@@ -72,6 +72,8 @@ export function Home() {
     setSelectedTableId(event.target.value);
   };
 
+  console.log(isTableActive);
+  
   return (
     <Layout>
       <main className="max-w-screen-md h-screen grid grid-cols-2 gap-16 m-auto">
